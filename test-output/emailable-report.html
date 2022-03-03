@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">FirefoxTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">4.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">EdgeTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">0.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">ChromeTest</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">216.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">2</td><td class="numi">2</td><td class="numi_attn">4</td><td class="numi">0</td><td class="numi">216.7 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">FirefoxTest &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">Exercise.Exercise.AppTest</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1646312437115</td><td class="numi">0</td></tr>
+<tr><th colspan="4">FirefoxTest &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">Exercise.Exercise.AppTest</td><td><a href="#m2"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1646312441669</td><td class="numi">0</td></tr>
+<tr><th colspan="4">FirefoxTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">Exercise.Exercise.AppTest</td><td><a href="#m3"><b>Recarga_Celular</b>  </a></td><td class="numi">1</td><td>1646312441654</td><td class="numi">2</td></tr><tr class="skippedodd"><td><a href="#m4"><b>payment_process</b>  </a></td><td class="numi">1</td><td>1646312441663</td><td class="numi">2</td></tr>
+<tr><th colspan="4">EdgeTest &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">Exercise.Exercise.AppTest</td><td><a href="#m5"><b>setup</b>  </a></td><td class="numi">1</td><td>1646312442442</td><td class="numi">0</td></tr>
+<tr><th colspan="4">EdgeTest &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">Exercise.Exercise.AppTest</td><td><a href="#m6"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1646312442668</td><td class="numi">0</td></tr>
+<tr><th colspan="4">EdgeTest &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="2">Exercise.Exercise.AppTest</td><td><a href="#m7"><b>Recarga_Celular</b>  </a></td><td class="numi">1</td><td>1646312442613</td><td class="numi">16</td></tr><tr class="skippedodd"><td><a href="#m8"><b>payment_process</b>  </a></td><td class="numi">1</td><td>1646312442656</td><td class="numi">7</td></tr>
+<tr><th colspan="4">ChromeTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">Exercise.Exercise.AppTest</td><td><a href="#m9"><b>Recarga_Celular</b>  </a></td><td class="numi">1</td><td>1646312518426</td><td class="numi">26655</td></tr><tr class="passedodd"><td><a href="#m10"><b>payment_process</b>  </a></td><td class="numi">1</td><td>1646312545086</td><td class="numi">102887</td></tr>
+</table>
+<h1>FirefoxTest</h1>
+<h2 id="m1">Exercise.Exercise.AppTest:setup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Firefox</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NTS-SUWARNAJ&apos;, ip: &apos;192.168.36.213&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:100)
+<br/>at java.base/java.util.Optional.orElseGet(Optional.java:369)
+<br/>at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:187)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
+<br/>at Utilities.Browser_Launch.browser_launch(Browser_Launch.java:30)
+<br/>at Exercise.Exercise.AppTest.setup(AppTest.java:21)
+<br/>19 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">Exercise.Exercise.AppTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">Exercise.Exercise.AppTest:payment_process</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Exercise.Exercise.AppTest:Recarga_Celular</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>EdgeTest</h1>
+<h2 id="m5">Exercise.Exercise.AppTest:setup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Edge</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>The driver executable does not exist: C:\Users\NTS-suwarna\eclipse-workspace\Exercise\.\MicrosoftWebDriver.exe</p>
+com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+<br/>at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+<br/>at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+<br/>at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
+<br/>at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
+<br/>at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+<br/>at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
+<br/>at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
+<br/>at Utilities.Browser_Launch.browser_launch(Browser_Launch.java:62)
+<br/>at Exercise.Exercise.AppTest.setup(AppTest.java:21)
+<br/>19 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Exercise.Exercise.AppTest:tearDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Exercise.Exercise.AppTest:Recarga_Celular</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Exercise.Exercise.AppTest:payment_process</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>ChromeTest</h1>
+<h2 id="m9">Exercise.Exercise.AppTest:Recarga_Celular</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">Exercise.Exercise.AppTest:payment_process</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

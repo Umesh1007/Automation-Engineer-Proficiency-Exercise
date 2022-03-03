@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]">
+  <parameter name="browser" value="Edge"/>
+  <test parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="Exercise.Exercise.AppTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Recarga_Celular"/>
+          <include name="payment_process"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Exercise.Exercise.AppTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="Exercise.Exercise.AppTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Recarga_Celular"/>
+          <include name="payment_process"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Exercise.Exercise.AppTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
